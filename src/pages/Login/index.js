@@ -37,7 +37,7 @@ class Login extends React.Component {
     const {loginResult} = this.props;
 
     if (loginResult && prevProps.loginResult !== loginResult) {
-      this.props.navigation.replace('MainApp');
+      this.props.navigation.replace('Splash');
     }
   }
 
@@ -122,10 +122,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'transparent',
   },
-  logo: {
-    marginTop: 20,
-    alignItems: 'center',
-  },
   inputView: {
     width: '80%',
     backgroundColor: '#BDBDBD',
@@ -177,7 +173,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   cardLogin: {
-    backgroundColor: '#D6D2C4',
+    backgroundColor: 'white',
     marginHorizontal: 20,
     shadowColor: '#000',
     shadowOffset: {
@@ -202,7 +198,7 @@ const styles = StyleSheet.create({
   logo: {
     fontWeight: 'bold',
     fontSize: 50,
-    color: '#45526C',
+    color: 'black',
     marginBottom: 4,
     textAlign: 'center',
   },

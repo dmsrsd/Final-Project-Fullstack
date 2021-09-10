@@ -1,4 +1,5 @@
 import React from 'react';
+import {Alert} from 'react-native';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import FIREBASE from '../../../config/FIREBASE';
 import {clearStorage} from '../../../utils/LocalStorage';
@@ -12,6 +13,7 @@ const CardMenu = ({menu, navigation}) => {
         .then(() => {
           // Sign-out successful.
           clearStorage();
+          Alert.alert('Anda Telah LogOut');
           navigation.replace('Login');
         })
         .catch(error => {

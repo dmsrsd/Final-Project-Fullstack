@@ -106,7 +106,7 @@ export default connect(mapStateToProps, null)(Register);
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#0288D1',
   },
   judulRegister: {
     alignItems: 'center',

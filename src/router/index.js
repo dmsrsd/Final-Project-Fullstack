@@ -13,6 +13,7 @@ import {
   ProfilePage,
   EditProfile,
   TestPage,
+  ChangePassword,
 } from '../pages';
 import {BottomNavigator, MyTopNavigator} from '../components';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
@@ -46,7 +47,7 @@ const TopUpScreen = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="MainMenu">
+    <Stack.Navigator initialRouteName="ProfilePage">
       <Stack.Screen
         name="MainApp"
         component={MainApp}
@@ -81,6 +82,11 @@ const Router = () => {
         name="EditProfile"
         component={EditProfile}
         options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ChangePassword"
+        component={ChangePassword}
+        // options={{headerShown: false}}
       />
       <Stack.Screen
         name="TestPage"

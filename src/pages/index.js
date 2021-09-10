@@ -9,6 +9,7 @@ import Register from './Register';
 import ProfilePage from './Profile';
 import EditProfile from './EditProfile';
 import TestPage from './TestPage';
+import ChangePassword from './ChangePassword';
 
 export {
   Akun,
@@ -22,4 +23,5 @@ export {
   ProfilePage,
   EditProfile,
   TestPage,
+  ChangePassword,
 };
